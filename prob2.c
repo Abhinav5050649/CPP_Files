@@ -23,7 +23,10 @@ void pattern(int n)
     {
         int count = 1, flag = 1;
 
-        printf("\t");
+        for (int k = n - i; k >= 0; --k)
+        {
+            printf("  ");
+        }
         for (int j = 1, n = i; j <= 2*i - 1; ++j)
         {
             if (j < n && flag == 1)
