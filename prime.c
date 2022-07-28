@@ -44,7 +44,7 @@ bool isPrime(int num)
         return false;
     }
 
-    for (int i = 1, n = sqrt(num); i <= n; ++i)
+    for (int i = 2, n = sqrt(num); i <= n; ++i)
     {
         if (num % i == 0)
         {
@@ -52,7 +52,7 @@ bool isPrime(int num)
         }
     }
 
-    if (count > 1)
+    if (count > 0)
     {
         return false;
     }else{
